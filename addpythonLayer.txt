@@ -1,0 +1,9 @@
+mkdir -p python
+python3.7 -m venv pymysql
+cd pymysql
+source bin/activate
+pip install pymysql
+cp -r /home/ec2-user/pymysql/lib/python3.7/site-packages/* /home/ec2-user/python/
+deactivate
+cd
+zip -r pymysql.zip python
